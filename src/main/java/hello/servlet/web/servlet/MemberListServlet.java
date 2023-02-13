@@ -1,4 +1,4 @@
-package hello.servlet.web;
+package hello.servlet.web.servlet;
 
 import java.io.IOException;
 import java.io.PrintWriter;
