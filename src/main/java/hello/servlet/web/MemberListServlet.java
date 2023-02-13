@@ -15,7 +15,8 @@ import hello.servlet.domain.member.MemberRepository;
 
 @WebServlet(name = "memberListServlet", urlPatterns = "/servlet/members")
 public class MemberListServlet extends HttpServlet {
-	MemberRepository memberRepository = MemberRepository.getInstance();
+
+	private static MemberRepository memberRepository = MemberRepository.getInstance();
 
 	@Override
 	protected void service(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
